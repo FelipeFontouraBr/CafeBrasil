@@ -2,3 +2,10 @@
 .bg-success {
     background-image: linear-gradient(0deg, #28A745 0%, rgb(247, 243, 33) 410%) 
 }
+
+/*Configuração da class ScrollspySite, vai ter uma rolagem na página*/
+.scrollspySite { /*para isso, precisamos estabeler três coisas importantes: */
+    position: relative;
+    overflow: auto;
+    height: 380px;
+}
