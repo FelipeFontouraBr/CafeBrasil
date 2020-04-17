@@ -79,7 +79,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Próximo</span>
         </a>
-      </div>
+    </div>
       <div class="container"><!--Aqui entrará o conteúdo do nosso site-->
         <div class="row">
             <div class="col-12 text-center mt-5"> <!--ocupad as 12 colunas, com texto centralizado, mt-2(margin top, com valor de 1 a 5)-->
@@ -132,7 +132,9 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-5"><!--Inserção dos cards: -->
+
+        <!--Inserção dos cards: -->
+        <div class="row mb-5">
             <div class="col-sm-4"><!--Conteúdo divido em 3 colunas com tamanho 4 cada uma-->
               <div class="card"><!--Estrutura básica do card-->
                 <img class="card-img-top" src="_img/coffee4.jpg">
@@ -147,8 +149,8 @@
                     <li class="list-group-item">Item 3 - CafeBrasil</li>
                 </ul>                
                 <div class="card-body">
-                    <a href="#" class="card-link">Acessar</a>
-                    <a href="#" class="card-link">Saiba mais</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal1">Acessar</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal2">Saiba mais</a>
                 </div>
                 <div class="card-footer text-muted"><!--rodapé do card / text-muted(texto fica claro)-->
                    <p>Texto de Rodapé</p>
@@ -170,8 +172,8 @@
                 </ul>
                 <div>
                 <div class="card-body">
-                    <a href="#" class="card-link">Acessar</a>
-                    <a href="#" class="card-link">Saiba mais</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal3">Acessar</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal4">Saiba mais</a>
                 </div>
                 </div>
                 <div class="card-footer text-muted"><!--rodapé do card / text-muted(texto fica claro)-->
@@ -194,7 +196,7 @@
                 </ul>
                 <div>
                 <div class="card-body">
-                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal" >Acessar</a><!--para exibir o modal precisa fazer a ligação (data-toggle e target)-->
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Acessar</a><!--para exibir o modal precisa fazer a ligação (data-toggle e target)-->
                     <a href="#" class="card-link">Saiba mais</a>
                 </div>
                 </div>
@@ -205,12 +207,12 @@
             </div>
       </div>
     
-    <!--Modal-->
-    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog"><!--tabindex(coloca ordem na tabulação do conteúdo) / face(efeito da exibição do modal mais legal)-->
+    <!--Modal 1-->
+    <div class="modal fade" id="siteModal1" tabindex="-1" role="dialog"><!--tabindex(coloca ordem na tabulação do conteúdo) / face(efeito da exibição do modal mais legal)-->
         <div class="modal-dialog modal-lg" role="document"><!--modal-lg(tamanho do modal)-->
             <div class="modal-content"><!--conteudo do modal / Modal tem 3 tipos de conteudo (Cabeçalho, conteudo e rodapé)-->
                 <div class="modal-header">
-                    <h5 class="modal-title">Título do Modal</h5>
+                    <h5 class="modal-title">Título do Modal1</h5>
                     <button type="button" class="close" data-dismiss="modal"><!--botão para fechar o modal //data-dismiss fecha-->
                         <span>&times;</span>  <!--colocar um span, porque é o que vai aparecer-->
                     </button>
@@ -233,11 +235,101 @@
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
-
         </div>
-
-
     </div>
+    <!--Modal 2-->
+    <div class="modal fade" id="siteModal2" tabindex="-1" role="dialog"><!--tabindex(coloca ordem na tabulação do conteúdo) / face(efeito da exibição do modal mais legal)-->
+        <div class="modal-dialog modal-lg" role="document"><!--modal-lg(tamanho do modal)-->
+            <div class="modal-content"><!--conteudo do modal / Modal tem 3 tipos de conteudo (Cabeçalho, conteudo e rodapé)-->
+                <div class="modal-header">
+                    <h5 class="modal-title">Título do Modal2</h5>
+                    <button type="button" class="close" data-dismiss="modal"><!--botão para fechar o modal //data-dismiss fecha-->
+                        <span>&times;</span>  <!--colocar um span, porque é o que vai aparecer-->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid"><!--exibição com conteudo diferentes-->
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Título 1</h5>
+                                <p>Informações para exibir no Modal: Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe, omnis sequi repellat quibusdam, nam placeat illo officiis quas quis sed iste modi laudantium, minus expedita exercitationem ullam molestias culpa!</p>
+                            </div>
+                            <div class="col-6">
+                                <h5>Título 2</h5>
+                                <p>Informações para exibir no Modal: Lorem ipsum, dolor sit amet consectetur adipisicing elit. A architecto ipsum distinctio, doloribus eum ad nulla libero soluta nostrum? Nisi, natus facilis officia fuga reiciendis eius. Amet voluptatem facere iusto!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal3-->
+    <div class="modal fade" id="siteModal3" tabindex="-1" role="dialog"><!--tabindex(coloca ordem na tabulação do conteúdo) / face(efeito da exibição do modal mais legal)-->
+        <div class="modal-dialog modal-lg" role="document"><!--modal-lg(tamanho do modal)-->
+            <div class="modal-content"><!--conteudo do modal / Modal tem 3 tipos de conteudo (Cabeçalho, conteudo e rodapé)-->
+                <div class="modal-header">
+                    <h5 class="modal-title">Título do Modal2</h5>
+                    <button type="button" class="close" data-dismiss="modal"><!--botão para fechar o modal //data-dismiss fecha-->
+                        <span>&times;</span>  <!--colocar um span, porque é o que vai aparecer-->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid"><!--exibição com conteudo diferentes-->
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Título 1</h5>
+                                <p>Informações para exibir no Modal: Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe, omnis sequi repellat quibusdam, nam placeat illo officiis quas quis sed iste modi laudantium, minus expedita exercitationem ullam molestias culpa!</p>
+                            </div>
+                            <div class="col-6">
+                                <h5>Título 2</h5>
+                                <p>Informações para exibir no Modal: Lorem ipsum, dolor sit amet consectetur adipisicing elit. A architecto ipsum distinctio, doloribus eum ad nulla libero soluta nostrum? Nisi, natus facilis officia fuga reiciendis eius. Amet voluptatem facere iusto!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal4-->
+    <div class="modal fade" id="siteModal4" tabindex="-1" role="dialog"><!--tabindex(coloca ordem na tabulação do conteúdo) / face(efeito da exibição do modal mais legal)-->
+        <div class="modal-dialog modal-lg" role="document"><!--modal-lg(tamanho do modal)-->
+            <div class="modal-content"><!--conteudo do modal / Modal tem 3 tipos de conteudo (Cabeçalho, conteudo e rodapé)-->
+                <div class="modal-header">
+                    <h5 class="modal-title">Título do Modal2</h5>
+                    <button type="button" class="close" data-dismiss="modal"><!--botão para fechar o modal //data-dismiss fecha-->
+                        <span>&times;</span>  <!--colocar um span, porque é o que vai aparecer-->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid"><!--exibição com conteudo diferentes-->
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Título 1</h5>
+                                <p>Informações para exibir no Modal: Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe, omnis sequi repellat quibusdam, nam placeat illo officiis quas quis sed iste modi laudantium, minus expedita exercitationem ullam molestias culpa!</p>
+                            </div>
+                            <div class="col-6">
+                                <h5>Título 2</h5>
+                                <p>Informações para exibir no Modal: Lorem ipsum, dolor sit amet consectetur adipisicing elit. A architecto ipsum distinctio, doloribus eum ad nulla libero soluta nostrum? Nisi, natus facilis officia fuga reiciendis eius. Amet voluptatem facere iusto!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
