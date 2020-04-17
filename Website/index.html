@@ -194,7 +194,7 @@
                 </ul>
                 <div>
                 <div class="card-body">
-                    <a href="#" class="card-link">Acessar</a>
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal" >Acessar</a><!--para exibir o modal precisa fazer a ligação (data-toggle e target)-->
                     <a href="#" class="card-link">Saiba mais</a>
                 </div>
                 </div>
@@ -204,6 +204,29 @@
                 </div>                
             </div>
       </div>
+    
+    <!--Modal-->
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog"><!--tabindex(coloca ordem na tabulação do conteúdo) / face(efeito da exibição do modal mais legal)-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"><!--conteudo do modal / Modal tem 3 tipos de conteudo (Cabeçalho, conteudo e rodapé)-->
+                <div class="modal-header">
+                    <h5 class="modal-title">Título do Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal"><!--botão para fechar o modal //data-dismiss fecha-->
+                        <span>x</span>  <!--colocar um span, porque é o que vai aparecer-->
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus pariatur reprehenderit obcaecati placeat et ut dolores quasi odit labore, consectetur dicta aliquam accusamus quo ullam tempora ad error delectus.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
 </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
