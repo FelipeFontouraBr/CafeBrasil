@@ -222,7 +222,7 @@
         
         <div class="row">
             <div class="col-12"><!--Abaixo, menu de navegação: -->
-                <ul class="nav nav-pills justify-content-center" id="pills-nav" role="tablist"><!--nav-pills é o stilo escolhido / colocar tablist para funcionar-->
+                <ul class="nav nav-pills justify-content-center" id="pills-nav" role="tablist"><!--nav-pills é o stilo escolhido / colocar tablist para funcionar / justify-contente-center (deixa o menu centralizado)-->
                     <li class="nav-item"><!--para compor o menu-->
                         <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Texto qualquer 01</a>
                     </li>
@@ -233,6 +233,19 @@
                         <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Texto qualquer 03</a>
                     </li>
                 </ul>
+                <!--Itens que serão exibidos-->
+                <div class="tab-content" id="nav-pills-content">
+                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel"><!--fade(efeito para de exibição) / active(serão ativados quando abrir o site)-->
+                        ... 01
+                    </div>
+                    <div class="tab-pane fade" id="nav-item-02" role="tabpanel"><!--fade(efeito para de exibição) / active(serão ativados quando abrir o site)-->
+                        ... 02
+                    </div>
+                    <div class="tab-pane fade" id="nav-item-03" role="tabpanel"><!--fade(efeito para de exibição) / active(serão ativados quando abrir o site)-->
+                        ... 03
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
