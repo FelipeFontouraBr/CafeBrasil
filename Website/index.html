@@ -466,14 +466,52 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="display-4 text-center"><i class="fab fa-telegram-plane"></i>Título do Formulário</h1><!--display-4(aumentar o destaque)-->
+                <h1 class="display-4 text-center mt-3 mb-5"><i class="fab fa-telegram-plane"></i>Título do Formulário</h1><!--display-4(aumentar o destaque)-->
             </div>
         </div>
         <div class="row justify-content-center mb-5">
             <div class="col-sm-12 col-md-10 col-lg-8"><!--tamanho sm, ocupará todo o layout / tamanho md e lg, ñ precisa que seje tão largo-->
-                
-            </div>
+                <form>
+                    <div class="form-row"><!--possibilita um espaço pequeno entre os dois inputs--><!--Linha1-->
+                        <div class="form-group col-sm-6">
+                            <label for="inputNome">Seu nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Seu sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="form-row"><!--Linha2-->
+                        <div class="form-group col-sm-12">
+                            <label for="inputEnd">Seu endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+                        </div>
+                    </div>
+                    <div class="form-row"><!--Linha3-->
+                        <div class="form-group col-sm-6">
+                            <label for="inputCidade">Sua cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                        </div>
 
+                        <div class="form-group col-sm-4">
+                            <label for="inputEst">Seu estado</label>
+                            <select id="inputEst" class="form-control">
+                                <option selected>Escolha..</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="inputCep">Seu CEP</label>
+                            <input type="text" id="inputCep" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
