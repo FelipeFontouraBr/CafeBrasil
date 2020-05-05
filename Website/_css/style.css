@@ -9,3 +9,7 @@
     overflow: auto;
     height: 380px;
 }
+/*Configuração do texto*/
+.row p {
+    text-align: justify;
+}
