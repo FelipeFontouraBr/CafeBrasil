@@ -2,7 +2,7 @@
  Desenvolvimento de um website onde irá apresentar as qualidades do café que são fabricados no Brasil.
 
 ## Objetivo
- Desenvolver um website com tecnologia Bootstrap4
+ Desenvolvimento um website com tecnologia Bootstrap4
 
 ### Tecnologias
 
